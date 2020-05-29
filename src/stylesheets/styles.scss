@@ -1,11 +1,75 @@
+@import './../../node_modules/bootstrap/scss/bootstrap';
 @import 'variables';
 
 .topnavbar {
   background: $topnavbar;
+  background-color: $topbarnav;
   height: 35px;
   margin: auto;
-  margin-left: -8px;
-  margin-top: -22px;
   position: fixed;
   width: 100%;
+}
+
+.phone-icon {
+  color: $iconphone;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.phone-numbers {
+  color: $iconscolor;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 7px 3px;
+  text-decoration: underline;
+}
+
+.phone {
+  margin-left: 250px;
+}
+
+.separation-bar {
+  color: $iconscolor;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.search-bar {
+  display: inline-block;
+  float: right;
+  margin: -33px 50px 0 -800px;
+  width: 700px !important;
+}
+
+.social-media-nav {
+  display: inline-block;
+  float: right;
+  margin-right: 40px;
+  margin-top: -30px;
+
+  a {
+    background: $iconscolor;
+    border-radius: 50%;
+    color: $topbarnav;
+    height: 10px;
+    margin-right: 5px;
+    padding: 4px 6px;
+    text-align: center;
+    width: 10px;
+
+    &:hover {
+      background: $iconshover;
+      color: $topbarnav;
+    }
+  }
+
+  .facebook {
+    padding: 4px 8px;
+  }
+
+  .tiktok {
+    height: 15px;
+    padding-bottom: 4px;
+    width: 13px;
+  }
 }
