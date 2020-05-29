@@ -1,7 +1,7 @@
 const express = require('express')
 const http = require('http')
 const reload = require('reload')
-const opn = require('opn')
+// const opn = require('opn')
 
 
 const app = express()
@@ -16,11 +16,8 @@ app.get('/', (req, res) => res.render('index'))
 const server = http.createServer(app)
 server.listen(8080, function() {
   console.log('Listening to port 8080...')
-//   if (process.send) {
-//     process.send({ event:'online', url:'http://localhost:8080/' });
-// }
-  return opn('http://localhost:8080')
 })
 
+// opn('http://localhost:8080')
 
 reload(app)
