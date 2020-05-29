@@ -73,3 +73,21 @@
     width: 13px;
   }
 }
+
+.navbar {
+  height: 100px !important;
+}
+
+.logo {
+  height: 80px;
+  margin-left: 40px;
+  width: 124px;
+}
+
+.navbar-nav {
+  margin-left: 220px;
+
+  a {
+    margin-right: 30px;
+  }
+}
