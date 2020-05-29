@@ -1,0 +1,11 @@
+@import 'variables';
+
+.topnavbar {
+  background: $topnavbar;
+  height: 35px;
+  margin: auto;
+  margin-left: -8px;
+  margin-top: -22px;
+  position: fixed;
+  width: 100%;
+}
