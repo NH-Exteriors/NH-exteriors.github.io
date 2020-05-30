@@ -15,8 +15,8 @@ const app = express()
 
 app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'html')
-app.set('src', './src')
-app.use(express.static('src'))
+app.set('/', './')
+app.use(express.static('./'))
 
 app.get('/', (req, res) => res.render('index'))
 
