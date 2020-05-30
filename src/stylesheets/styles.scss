@@ -1,14 +1,10 @@
 @import './../../node_modules/bootstrap/scss/bootstrap';
 @import 'variables';
 
-body {
-  font-family: 'Mukta', sans-serif;
-}
-
 .topnavbar {
   background: $topnavbar;
   background-color: $topbarnav;
-  height: 37px;
+  height: 35px;
   margin: auto;
   position: fixed;
   width: 100%;
@@ -29,7 +25,7 @@ body {
 }
 
 .phone {
-  margin-left: 300px;
+  margin-left: 250px;
 }
 
 .separation-bar {
@@ -41,7 +37,7 @@ body {
 .search-bar {
   display: inline-block;
   float: right;
-  margin: -32px 30px 0 -800px;
+  margin: -33px 50px 0 -800px;
   width: 700px !important;
 }
 
@@ -49,7 +45,7 @@ body {
   display: inline-block;
   float: right;
   margin-right: 40px;
-  margin-top: -25px;
+  margin-top: -30px;
 
   a {
     background: $iconscolor;
@@ -86,15 +82,13 @@ body {
 .logo {
   height: 80px;
   margin-left: 40px;
-  margin-top: -30px;
   width: 124px;
 }
 
 .navbar-nav {
-  font-size: 17px;
-  margin-left: 250px !important;
+  margin-left: 220px;
 
   a {
-    margin-right: 20px;
+    margin-right: 30px;
   }
 }
