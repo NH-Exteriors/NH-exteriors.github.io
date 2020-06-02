@@ -6,8 +6,9 @@
   background-color: $topbarnav;
   height: 35px;
   margin: auto;
-  position: fixed;
+  position: relative;
   width: 100%;
+  z-index: 300;
 }
 
 .phone-icon {
@@ -74,26 +75,94 @@
   }
 }
 
+.navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 300 !important;
+}
+
+.navbar.scrolled {
+  background-color: $navscroll !important;
+  top: -35px;
+}
+
+.navbar.scrolled-main {
+  background-color: $secondnav !important;
+  top: -35px;
+}
+
 .navbar {
-  height: 100px !important;
-  margin-top: 4px;
+  height: 80px !important;
+
+  a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+  }
+}
+
+.carousel-item {
+  height: 500px;
+  width: 100%;
 }
 
 .logo {
-  height: 80px;
+  height: 75px;
   margin-left: 40px;
-  width: 124px;
+  width: 116px;
 }
 
 .navbar-nav {
   margin-left: 220px;
+  position: fixed;
 
   a {
     margin-right: 30px;
   }
 }
 
-.carousel-item {
-  height: 450px;
+.side {
+  // position: absolute;
+  padding: 30px 30px 400px;
+}
+
+.sidemenu {
+  background-color: $topbarnav;
+  border-right: 5px solid $dividor;
+}
+
+.footer {
+  background-color: $iconscolor;
+  bottom: 0;
+  color: $topbarnav;
+  left: 0;
+  padding: 400px 0 5px 15px;
+  position: fixed;
+  text-align: left;
+  top: 900px;
   width: 100%;
+}
+
+.list-bar {
+  margin-left: -20px;
+  margin-right: 20px;
+  padding: 0 10px 0 0;
+  text-align: right;
+  text-decoration: none;
+}
+
+.menu-title {
+  color: $sidetext;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  padding: 12px 0;
+}
+
+.list-item {
+  margin-top: 10px;
+
+  a {
+    color: $sidetext;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+  }
 }

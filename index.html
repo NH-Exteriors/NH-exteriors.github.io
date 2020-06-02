@@ -31,7 +31,8 @@ custom fonts, your link to your stylesheet and/or javascript files -->
 
 <!-- font for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+  <!-- font for side menu -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
 <!-- page scripts, this connect libraries and frameworks to the html. REMOVING THIS WILL BREAK YOUR CODE -->
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -43,7 +44,7 @@ custom fonts, your link to your stylesheet and/or javascript files -->
 <!-- body tag, here are all the tags that will hold the content that will be seen
   in the page -->
 <body>
-  <nav>
+  <header class="header-fixed">
   <!-- this is the top green navbar with the phone numbers and social media -->
   <div class="topnavbar">
     <!-- content that is inside of the top green navigation bar -->
@@ -82,10 +83,11 @@ custom fonts, your link to your stylesheet and/or javascript files -->
       <a href="#" target="_blank" class="youtube icon"><i class="fa fa-youtube"></i></a>
       <a href="https://www.tiktok.com/@nhexteriors?lang=en" target="_blank" class="tiktok icon"><img src="./public/tiktok.png" class="tiktok"></a>
     </div>
+  </div>
     <!-- end of social media icons section -->
 
     <!-- beginning of MAIN navbar -->
-
+<nav class="navigation">
     <div class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#"><img src="./public/main-logo.png" alt="NH Exteriors Logo" class="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,6 +106,10 @@ custom fonts, your link to your stylesheet and/or javascript files -->
 
       </div>
     </div>
+  </nav>
+</header>
+
+<section>
 
     <!-- Carousel # 1 -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -133,14 +139,66 @@ custom fonts, your link to your stylesheet and/or javascript files -->
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
-</nav>
+  </section>
+
   <!-- end of first navbar -->
 
 <!--/.Navbar-->
+<!-- Side navigation menu -->
+<main class="main-page">
 
+
+<section class="container-expand-lg side overflow-auto">
+        <div class="row">
+  <!-- Main Section About Me starts -->
+      <!-- About me Section-->
+      <div class="col-12 col-lg-2 sidemenu">
+        <div class="all-items">
+        <ul class="list-bar">
+          <li class="menu-title">About Us</li>
+          <li class="list-item"><a href="#">History of the company</a></li>
+          <li class="list-item"><a href="#">Meet Our Staff</a></li>
+          <li class="list-item"><a href="#">Corporate Citizenship</a></li>
+          <li class="list-item"><a href="#">Honors/Accolades</a></li>
+          <li class="list-item"><a href="#">In the News</a></li>
+        </ul>
+        <ul class="list-bar">
+          <li class="menu-title">Why Us?</li>
+          <li class="list-item"><a href="#">Product Quality</a></li>
+          <li class="list-item"><a href="#">Service Department</a></li>
+          <li class="list-item"><a href="#">Experience</a></li>
+          <li class="list-item"><a href="#">Our Process</a></li>
+        </ul>
+        <ul class="list-bar">
+          <li class="menu-title">Products</li>
+          <li class="list-item"><a href="#">Roofing</a></li>
+          <li class="list-item"><a href="#">Siding</a></li>
+          <li class="list-item"><a href="#">Windows and Shutters</a></li>
+          <li class="list-item"><a href="#">Doors</a></li>
+          <li class="list-item"><a href="#">More Products</a></li>
+        </ul>
+        <ul class="list-bar">
+          <li class="menu-title">Other</li>
+          <li class="list-item"><a href="#">Financing</a></li>
+          <li class="list-item"><a href="#">Promotions</a></li>
+          <li class="list-item"><a href="#">Contact Us</a></li>
+          <li class="list-item"><a href="#">Communities We Serve</a></li>
+          <li class="list-item"><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+  <footer class='footer'>
+              <p id="footer-text">By <a href="https://www.pantlitz.dev/" target="_blank">Patricia Antlitz</a> &copy; Copyright 2020</p>
+      </footer>
 
 <!-- end of body tag -->
+<script src="./src/assets/app.js"></script>
 <script src="/reload/reload.js"></script>
 </body>
 <!-- end of html document -->
