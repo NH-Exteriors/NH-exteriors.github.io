@@ -33,11 +33,14 @@ custom fonts, your link to your stylesheet and/or javascript files -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- font for side menu -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
 <!-- page scripts, this connect libraries and frameworks to the html. REMOVING THIS WILL BREAK YOUR CODE -->
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <!-- end of head tag -->
 
 </head>
@@ -86,13 +89,16 @@ custom fonts, your link to your stylesheet and/or javascript files -->
   </div>
     <!-- end of social media icons section -->
 
-    <!-- beginning of MAIN navbar -->
+    <!-- beginning of MAIN white navbar -->
 <nav class="navigation">
     <div class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- logo on navbar -->
       <a class="navbar-brand" href="#"><img src="./public/main-logo.png" alt="NH Exteriors Logo" class="logo"></a>
+      <!-- hamburger icon when screen is adjusted -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- links on navbar -->
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
@@ -109,16 +115,20 @@ custom fonts, your link to your stylesheet and/or javascript files -->
   </nav>
 </header>
 
-<section>
+<!-- this is the end of both navbars -->
 
-    <!-- Carousel # 1 -->
+<!-- Carousel # 1 -->
+
+<section>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
+        <!-- this are the indicators located on the middle-bottom of the images
+        which indicates how many images are in the carousel-->
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <!-- Wrapper the slides -->
+      <!-- Wrapper the slides, this are the images on the carousel #1 -->
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="./public/exterior-1.jpg" alt="First slide">
@@ -130,6 +140,7 @@ custom fonts, your link to your stylesheet and/or javascript files -->
           <img class="d-block w-100" src="./public/exterior-3.jpg" alt="Third slide">
         </div>
       </div>
+      <!-- Previous and next arrows-->
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -141,14 +152,15 @@ custom fonts, your link to your stylesheet and/or javascript files -->
     </div>
   </section>
 
-  <!-- end of first navbar -->
+  <!-- end of carousel # 1 -->
 
 <!--/.Navbar-->
-<!-- Side navigation menu -->
+
+<!-- This is the start of the main page content -->
 <main class="main-page">
 
-
-<section class="container-expand-lg side overflow-auto">
+<!-- Side navigation menu -->
+<section class="container-expand-lg side">
         <div class="row">
   <!-- Main Section About Me starts -->
       <!-- About me Section-->
@@ -162,6 +174,7 @@ custom fonts, your link to your stylesheet and/or javascript files -->
           <li class="list-item"><a href="#">Honors/Accolades</a></li>
           <li class="list-item"><a href="#">In the News</a></li>
         </ul>
+        <!-- Why Us Section-->
         <ul class="list-bar">
           <li class="menu-title">Why Us?</li>
           <li class="list-item"><a href="#">Product Quality</a></li>
@@ -169,6 +182,7 @@ custom fonts, your link to your stylesheet and/or javascript files -->
           <li class="list-item"><a href="#">Experience</a></li>
           <li class="list-item"><a href="#">Our Process</a></li>
         </ul>
+        <!-- Products Section-->
         <ul class="list-bar">
           <li class="menu-title">Products</li>
           <li class="list-item"><a href="#">Roofing</a></li>
@@ -177,6 +191,7 @@ custom fonts, your link to your stylesheet and/or javascript files -->
           <li class="list-item"><a href="#">Doors</a></li>
           <li class="list-item"><a href="#">More Products</a></li>
         </ul>
+        <!-- Other Section-->
         <ul class="list-bar">
           <li class="menu-title">Other</li>
           <li class="list-item"><a href="#">Financing</a></li>
@@ -186,9 +201,32 @@ custom fonts, your link to your stylesheet and/or javascript files -->
           <li class="list-item"><a href="#">Sitemap</a></li>
         </ul>
       </div>
+
+      <!-- end of side navigation links -->
+
+      <!-- this is section below the side navigation links which will include
+      the posts from the blog -->
+
+      <div class="blog-links-background">
+        <ul class="blog-links">
+          <p class="blog-links-title">Blog</p>
+          <p class="posts">Latest Posts </p>
+          <li class="list-item-blog"><a href="#">Post number 1 a title we will
+          know in the future</a></li><br>
+          <li class="list-item-blog"><a href="#">Post number 2 Another title</a></li><br>
+          <li class="list-item-blog"><a href="#">Post number 3 Something about siding</a></li><br>
+          <li class="list-item-blog"><a href="#">Post number 4</a></li><br>
+          <li class="list-item-blog"><a href="#">Post number 5</a></li><br>
+        </ul>
+      </div>
+
       </div>
     </div>
   </section>
+  <!-- end of Side navigation section -->
+
+  <!-- this is section below the side navigation links which will include
+  the posts from the blog -->
 
 
 </main>
