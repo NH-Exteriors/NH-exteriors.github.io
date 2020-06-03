@@ -201,6 +201,33 @@ body {
   }
 }
 
+.carousel-inner-2 {
+  img {
+    border-radius: 10px;
+    height: 600px !important;
+    width: 250px !important;
+    margin-left: 40px;
+  }
+}
+
+.prev-next {
+  margin-top: 300px;
+}
+
+.news-letter {
+  background-color: $bloglinks;
+  border-radius: 10px;
+  display: inline-block;
+  height: 150px;
+  width: 300px;
+  margin-top: 640px;
+  margin-left: 15px;
+}
+
+.fixed-content {
+  position: fixed;
+}
+
 .footer {
   background-color: $iconscolor;
   bottom: 0;
