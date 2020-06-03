@@ -187,8 +187,8 @@ body {
 }
 
 .posts {
-  text-align: center;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .list-item-blog {
@@ -205,37 +205,60 @@ body {
   img {
     border-radius: 10px;
     height: 600px !important;
-    width: 250px !important;
     margin-left: 40px;
+    width: 250px !important;
   }
 }
 
 .prev-next {
-  margin-top: 300px;
+  margin-left: 75px;
+  margin-top: 570px;
 }
 
 .news-letter {
   background-color: $bloglinks;
   border-radius: 10px;
-  display: inline-block;
-  height: 150px;
-  width: 300px;
-  margin-top: 640px;
+  height: 165px;
   margin-left: 15px;
+  margin-top: 640px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  width: 300px;
+}
+
+.news-title {
+  color: $topbarnav;
 }
 
 .fixed-content {
   position: fixed;
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 33px !important;
+}
+
+.news-input {
+  border-radius: 33px !important;
+  margin-left: 35px;
+  padding-top: 15px;
+}
+
+.news-submit {
+  border-radius: 33px !important;
+  margin-top: 15px;
+  padding: 3px 16px !important;
 }
 
 .footer {
-  background-color: $iconscolor;
-  bottom: 0;
+  background-color: $sidetext;
   color: $topbarnav;
+  height: 500px;
+  // padding: 400px 0 5px 15px;
+  position: absolute;
+  top: 2130px;
   left: 0;
-  padding: 400px 0 5px 15px;
-  position: fixed;
-  text-align: left;
-  top: 900px;
+  bottom: 0;
   width: 100%;
 }

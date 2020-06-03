@@ -244,11 +244,11 @@ custom fonts, your link to your stylesheet and/or javascript files -->
       <img src="./public/Carousel 5.png" class="d-block w-100" alt="Quote 3">
     </div>
   </div>
-  <a class="carousel-control-prev prev-next" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev prev-next next" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next prev-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next prev-next previous" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -259,7 +259,12 @@ custom fonts, your link to your stylesheet and/or javascript files -->
     <!-- end of carousel # 2 -->
 
     <div class="news-letter">
-    <h6>place holder</h6>
+      <strong class="news-title">Subscribe to our Newsletter</strong>
+      <div class="input-group-sm w-75 mb-3 news-input">
+    <input type="text" class="form-control" placeholder="Email Adress" aria-label="Username" aria-describedby="basic-addon1">
+    <!-- <br> -->
+    <button type="button" class="btn btn-warning news-submit">Submit</button>
+  </div>
 
     </div>
 
@@ -268,14 +273,11 @@ custom fonts, your link to your stylesheet and/or javascript files -->
 </div>
 </section>
   <!-- end of Side navigation section -->
-
-
-
-</main>
-
   <footer class='footer'>
               <p id="footer-text">By <a href="https://www.pantlitz.dev/" target="_blank">Patricia Antlitz</a> &copy; Copyright 2020</p>
       </footer>
+</main>
+
 
 <!-- end of body tag -->
 <script src="./src/assets/app.js"></script>
