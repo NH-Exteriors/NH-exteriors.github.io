@@ -253,12 +253,155 @@ body {
 
 .footer {
   background-color: $sidetext;
-  color: $topbarnav;
-  height: 500px;
-  // padding: 400px 0 5px 15px;
+  border-radius: 20px 20px 0 0;
+  bottom: 0;
+  color: $footertext;
+  height: 550px;
+  left: 0;
+  padding: 60px 10px 10px;
   position: absolute;
   top: 2130px;
-  left: 0;
-  bottom: 0;
   width: 100%;
+}
+
+.logo-footer {
+  height: 100px !important;
+  width: 155px !important;
+  margin-bottom: 35px;
+  margin-left: 80px;
+}
+
+.footer-left {
+
+  p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  h6 {
+    text-align: left;
+  }
+
+  a {
+    color: $footertext;
+    text-decoration: underline;
+  }
+}
+
+.footer-contact {
+  margin: 140px 40px 20px 20px;
+}
+
+.footer-dividor {
+  height: 450px;
+}
+
+.footer-menu-about {
+  margin-left: -45px;
+  margin-right: 20px;
+  text-align: right;
+
+  .menu-title-footer {
+    color: $green;
+    font-size: 18px;
+  }
+
+  .line {
+    color: $lineblue;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    color: $footertext;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.footer-menu-services {
+  text-align: left;
+  margin-right: 20px;
+
+  .menu-title-footer {
+    color: $green;
+    font-size: 18px;
+  }
+
+  .line {
+    color: $lineblue;
+  }
+
+  li {
+    list-style-type: none;
+    margin-left: -40px;
+  }
+
+  a {
+    color: $footertext;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.footer-right {
+  margin-left: -30px;
+  text-align: left;
+
+  .footer-energy {
+    height: 80px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  .footer-epa {
+    height: 100px;
+  }
+
+  .img-bbb {
+    margin-left: 60px;
+  }
+
+}
+
+.social-media-footer {
+  display: inline-block;
+  margin-top: 40px;
+
+  a {
+    background: $topbarnav;
+    border-radius: 50%;
+    color: $sidetext;
+    height: 15px;
+    margin-right: 5px;
+    padding: 7px 10px;
+    text-align: center;
+    width: 15px;
+
+    &:hover {
+      background: $iconshover;
+      color: $topbarnav;
+    }
+  }
+
+  .facebook {
+    padding: 7px 13px;
+  }
+
+  .tiktok {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.footer-text {
+  color: $footertext;
+  font-size: 12px;
+  margin-top: 70px;
 }
