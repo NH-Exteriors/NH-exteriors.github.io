@@ -468,6 +468,7 @@ body {
 
 .page-main-content-communities {
   text-align: left;
+  color: $sidetext;
 
   .communities-title {
     color: $sidetext;
@@ -500,6 +501,7 @@ body {
     height: 250px;
     margin-top: -90px;
   }
+
 }
 
 .background-nh {
@@ -519,4 +521,220 @@ body {
 .title-comu-me {
   color: $sidetext;
   padding: 20px 0 30px 190px;
+}
+
+.mission-background {
+  background-color: $secondnav;
+  border-radius: 20px;
+  height: 200px;
+  margin: 40px 20px 40px 60px;
+  padding: 20px 20px 40px;
+  width: 700px;
+}
+
+.main-statement {
+  font-size: 20px;
+  margin: 20px 70px 40px 90px;
+}
+
+.mission-img {
+  border-radius: 50%;
+  height: 150px;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+
+.wrapped-text {
+  float: left;
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-left: 120px;
+  margin-top: -270px;
+  padding-right: 90px;
+}
+
+.wrapped-p {
+  margin: 150px;
+}
+
+.animate {
+  margin-left: 160px;
+  margin-top: 100px;
+
+  span {
+    display: inline-block;
+
+    &:nth-of-type(1) {
+      animation-delay: .05s;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: .05s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: .1s;
+    }
+
+    &:nth-of-type(4) {
+      animation-delay: .15s;
+    }
+
+    &:nth-of-type(5) {
+      animation-delay: .2s;
+    }
+
+    &:nth-of-type(6) {
+      animation-delay: .25s;
+    }
+
+    &:nth-of-type(7) {
+      animation-delay: .3s;
+    }
+
+    &:nth-of-type(8) {
+      animation-delay: .35s;
+    }
+
+    &:nth-of-type(9) {
+      animation-delay: .4s;
+    }
+
+    &:nth-of-type(10) {
+      animation-delay: .45s;
+    }
+
+    &:nth-of-type(11) {
+      animation-delay: .5s;
+    }
+
+    &:nth-of-type(12) {
+      animation-delay: .55s;
+    }
+
+    &:nth-of-type(13) {
+      animation-delay: .6s;
+    }
+
+    &:nth-of-type(14) {
+      animation-delay: .65s;
+    }
+
+    &:nth-of-type(15) {
+      animation-delay: .7s;
+    }
+
+    &:nth-of-type(16) {
+      animation-delay: .75s;
+    }
+
+    &:nth-of-type(17) {
+      animation-delay: .8s;
+    }
+
+    &:nth-of-type(18) {
+      animation-delay: .85s;
+    }
+
+    &:nth-of-type(19) {
+      animation-delay: .9s;
+    }
+
+    &:nth-of-type(20) {
+      animation-delay: .95s;
+    }
+
+    &:nth-of-type(21) {
+      animation-delay: .85s;
+    }
+
+    &:nth-of-type(22) {
+      animation-delay: .9s;
+    }
+
+    &:nth-of-type(23) {
+      animation-delay: .95s;
+    }
+
+    &:nth-of-type(24) {
+      animation-delay: .9s;
+    }
+
+    &:nth-of-type(25) {
+      animation-delay: .95s;
+    }
+
+    &:nth-of-type(26) {
+      animation-delay: .85s;
+    }
+
+    &:nth-of-type(27) {
+      animation-delay: .9s;
+    }
+
+    &:nth-of-type(28) {
+      animation-delay: .95s;
+    }
+
+    &:nth-of-type(29) {
+      animation-delay: .9s;
+    }
+
+    &:nth-of-type(30) {
+      animation-delay: .95s;
+    }
+
+    &:nth-of-type(31) {
+      animation-delay: .85s;
+    }
+
+    &:nth-of-type(32) {
+      animation-delay: .9s;
+    }
+
+    &:nth-of-type(33) {
+      animation-delay: .95s;
+    }
+
+    &:nth-of-type(34) {
+      animation-delay: .9s;
+    }
+
+    &:nth-of-type(35) {
+      animation-delay: .95s;
+    }
+
+    &:nth-of-type(36) {
+      animation-delay: .85s;
+    }
+
+    &:nth-of-type(37) {
+      animation-delay: .85s;
+    }
+  }
+}
+
+.four {
+
+  span {
+    animation: revolveDrop .3s forwards;
+    color: $sidetext;
+    opacity: 0;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+  }
+}
+
+@keyframes revolveDrop {
+  30% {
+    transform: translate(0, -50px) rotate(180deg) scale(1);
+  }
+
+  60% {
+    transform: translate(0, 20px) scale(.8) rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0) scale(1) rotate(0deg);
+  }
 }
