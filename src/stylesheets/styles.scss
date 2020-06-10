@@ -143,6 +143,10 @@ body {
   padding: 0 10px 0 0;
   text-align: right;
   text-decoration: none;
+
+  a {
+    color: $sidetext;
+  }
 }
 
 .menu-title {
@@ -490,6 +494,16 @@ body {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .about-us-links {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .about-link {
+    margin: 10px;
+  }
 }
 
 .communities-container-1 {
@@ -504,6 +518,14 @@ body {
 
 }
 
+.company-history {
+  padding: 40px;
+
+  p {
+    padding-bottom: 20px;
+  }
+}
+
 .background-nh {
   background-color: $secondnav;
   border-radius: 20px;
@@ -511,6 +533,56 @@ body {
   margin-left: -250px;
   margin-top: 60px;
   width: 700px;
+
+  &:hover {
+    background-color: $dividor;
+  }
+}
+
+.about-container {
+  text-align: center;
+
+  .background-about {
+    background-color: $topbarnav;
+    border-radius: 20px;
+    height: 350px;
+    margin: 40px 0 10px -30px;
+    width: 270px;
+
+    &:hover {
+      opacity: 30%;
+    }
+  }
+
+  img {
+    border-radius: 20px;
+    height: 270px;
+    margin-bottom: 20px;
+  }
+
+  .title-about {
+    color: $secondnav;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    padding: 170px 0 40px 50px;
+    text-align: center;
+  }
+
+  .title-about-2 {
+    color: $secondnav;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 700;
+    position: absolute;
+    padding: 15px 0 40px 50px;
+    text-align: center;
+  }
+
+  .about-subtitle {
+    font-size: 17px;
+  }
 }
 
 .title-comu {
@@ -737,4 +809,129 @@ body {
     opacity: 1;
     transform: translate(0) scale(1) rotate(0deg);
   }
+}
+
+.be-part {
+  padding-bottom: 30px;
+
+  .be-part-title {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    padding-left: 50px;
+    margin-top: -150px;
+  }
+
+  a {
+    background-color: $highlight;
+    border-radius: 33px;
+    color: $sidetext;
+    margin-left: 450px;
+    padding: 15px 25px;
+
+    &:hover {
+      background-color: $footertext;
+    }
+  }
+}
+
+.staff-members {
+  margin-top: 20px;
+}
+
+.staff-images {
+  padding: 30px;
+  border-bottom: 1px solid $lineblue;
+
+  img {
+    border-radius: 50%;
+    height: 190px;
+    float: left;
+    padding-right: 40px;
+  }
+
+  h5 {
+    padding-bottom: 10px;
+  }
+}
+
+.staff-links {
+  padding-bottom: 30px;
+}
+
+.members-sections {
+  margin-left: 30px;
+
+  img {
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+}
+
+.staff-subtitle {
+  color: $topbarnav;
+  font-size: 40px;
+  padding: 30px 280px 40px 40px;
+  position: absolute;
+}
+
+.management {
+  padding: 30px 80px 40px 390px;
+}
+
+.other-staff {
+  padding: 30px 200px 40px;
+}
+
+.staff-p {
+  color: $dividor;
+  padding: 150px 280px 40px 50px;
+  position: absolute;
+}
+
+.management-p {
+  padding: 150px 60px 40px 410px;
+}
+
+.other-p {
+  padding: 150px 280px 40px 220px;
+}
+
+.staff-opacity {
+  &:hover {
+    opacity: 50%;
+  }
+}
+
+.staff-images-executive {
+  padding: 30px;
+  border-bottom: 1px solid $lineblue;
+
+  img {
+    height: 400px;
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    width: 350px;
+  }
+
+  h5 {
+    padding-bottom: 10px;
+  }
+}
+
+.go-back {
+  padding-top: 20px;
+  padding-left: 150px;
+
+  a {
+    background-color: $go-back;
+    padding: 10px 15px;
+  }
+}
+
+.content-management {
+  height: 1400px;
+  padding-bottom: 150px;
+  width: 800px !important;
 }
