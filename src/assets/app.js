@@ -28,6 +28,27 @@ $(window).scroll(function() {
   }
 });
 
+
+$(window).scroll(function() {
+  $('.navbar-blog').trigger('reset')
+
+  if ( $(this).scrollTop() >= 50 ) {
+    $('.navbar-blog').addClass('scrolled-main');
+  } else if ( $(this).scrollTop() <= 70) {
+    $('.navbar-blog').removeClass('scrolled-main')
+  }
+});
+
+$(window).scroll(function() {
+  $('.news-letter-blog').trigger('reset')
+
+  if ( $(this).scrollTop() >= 50 ) {
+    $('.news-letter-blog').addClass('scrolled-main-blog');
+  } else if ( $(this).scrollTop() <= 70) {
+    $('.news-letter-blog').removeClass('scrolled-main-blog')
+  }
+});
+
 $('.a-to-c').on('click', function () {
   $('.list-a-c').show()
   $('.list-d-f').hide()

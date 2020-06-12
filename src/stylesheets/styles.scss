@@ -31,7 +31,7 @@ body {
 }
 
 .phone {
-  margin-left: 250px;
+  margin-left: 750px;
 }
 
 .separation-bar {
@@ -94,6 +94,10 @@ body {
 .navbar.scrolled-main {
   background-color: $secondnav !important;
   top: -35px;
+}
+
+.news-letter-blog.scrolled-main-blog {
+  margin-top: -35px;
 }
 
 .navbar {
@@ -170,6 +174,10 @@ body {
 .sidemenu {
   background-color: $topbarnav;
   border-right: 5px solid $dividor;
+}
+
+.sidemenu-blog {
+  height: 1900px;
 }
 
 .list-bar {
@@ -266,6 +274,32 @@ body {
   width: 300px;
 }
 
+.news-letter-blog {
+  background-color: $bloglinks;
+  font-size: 18px;
+  height: 70px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  width: auto;
+
+  .news-title-blog {
+    color: $topbarnav;
+    padding-left: 30px;
+  }
+
+  .news-input {
+    margin: -45px 550px;
+    padding: 0 50px;
+  }
+
+  .news-submit-blog {
+    border-radius: 33px !important;
+    margin-left: 650px !important;
+    margin-top: -63px;
+    padding: 3px 16px !important;
+  }
+}
+
 .news-title {
   color: $topbarnav;
 }
@@ -300,7 +334,7 @@ body {
   left: 0;
   padding: 60px 10px 10px;
   position: absolute;
-  top: 2050px;
+  top: 2070px;
   width: 100%;
 }
 
@@ -517,6 +551,16 @@ body {
     text-align: center;
   }
 
+  .communities-title-blog {
+    color: $sidetext;
+    font-size: 30px;
+    margin-left: -70px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+
   .corporate-title {
     font-size: 23px;
     margin-bottom: 50px;
@@ -554,6 +598,10 @@ body {
   .about-link {
     margin: 10px;
   }
+
+  .search-bar-blog {
+    margin-left: 200px;
+  }
 }
 
 .communities-container-1 {
@@ -563,7 +611,7 @@ body {
     border-radius: 0 20px 20px 0;
     float: right;
     height: 250px;
-    margin-top: -90px;
+    margin-top: -243px;
   }
 
 }
@@ -637,12 +685,14 @@ body {
 
 .title-comu {
   color: $sidetext;
-  padding: 20px 0 30px 150px;
+  font-size: 45px;
+  padding: 80px 50px;
 }
 
 .title-comu-me {
   color: $sidetext;
-  padding: 20px 0 30px 190px;
+  font-size: 45px;
+  padding: 80px 50px;
 }
 
 .mission-background {
@@ -1085,4 +1135,81 @@ body {
   select {
     padding-left: 13px !important;
   }
+}
+
+.blog-space {
+  margin-top: 150px;
+}
+
+.background-blog {
+  background-color: $dividor;
+  margin: 50px 80px 0 50px;
+  height: 350px;
+
+  &:hover{
+    opacity: 70%;
+  }
+}
+
+.background-blog-2 {
+  background-color: $dividor;
+  margin: 20px 5px 0 50px;
+  height: 450px;
+
+  &:hover{
+    opacity: 70%;
+  }
+}
+
+.background-blog-3 {
+  background-color: $dividor;
+  margin: 20px 80px 0 -25px;
+  height: 450px;
+
+  &:hover{
+    opacity: 70%;
+  }
+}
+
+.background-blog-4 {
+  background-color: $dividor;
+  margin: 20px 10px 0 50px;
+  height: 450px;
+
+  &:hover{
+    opacity: 70%;
+  }
+}
+
+.background-blog-5 {
+  background-color: $dividor;
+  margin: 20px 5px 0 -25px;
+  height: 450px;
+
+  &:hover{
+    opacity: 70%;
+  }
+}
+
+.background-blog-6 {
+  background-color: $dividor;
+  margin: 20px 80px 0 -20px;
+  height: 450px;
+
+  &:hover{
+    opacity: 70%;
+  }
+}
+
+.blog-container1 {
+  position: relative;
+}
+
+.img-blog-box1 {
+  height: 350px;
+
+}
+
+.title-blog {
+  position: absolute;
 }
