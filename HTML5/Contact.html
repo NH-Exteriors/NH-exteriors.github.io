@@ -24,6 +24,7 @@ custom fonts, your link to your stylesheet and/or javascript files -->
 <!-- change this logo to your logo -->
   <link href="./../house-logo.png" rel="icon" type="image/x-icon" class="icon">
   <!-- links your html to your regular css file -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="./../src/stylesheets/styles.min.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
   <link rel="stylesheet" type="text/css" href="http://localhost:8080/src/stylesheets/styles.min.css">
@@ -167,23 +168,23 @@ custom fonts, your link to your stylesheet and/or javascript files -->
       <div class="col-12 col-lg-2 sidemenu">
         <div class="all-items">
         <ul class="list-bar">
-          <li class="menu-title">About Us</li>
+          <li class="menu-title"><a href="./About-Us.html">About Us</a></li>
           <li class="list-item"><a href="./Mission.html">Mission Statement</a></li>
-          <li class="list-item"><a href="./History.html">History of the company</a></li>
+          <li class="list-item"><a href="./History.html">History of the Company</a></li>
           <li class="list-item"><a href="./Staff.html">Staff</a></li>
           <li class="list-item"><a href="./Corporate.html">Corporate Citizenship</a></li>
           <li class="list-item"><a href="./Honors.html">Honors/Accolades</a></li>
         </ul>
         <!-- Why Us Section-->
         <ul class="list-bar">
-          <li class="menu-title">Why Us?</li>
+          <li class="menu-title"><a href="./Why-Us.html">Why Us?</a></li>
           <li class="list-item"><a href="./Warrantees.html">Warrantees / Product Quality</a></li>
           <li class="list-item"><a href="./Service.html">Service Department</a></li>
           <li class="list-item"><a href="./Experience.html">Experience</a></li>
         </ul>
         <!-- Products Section-->
         <ul class="list-bar">
-          <li class="menu-title">Products</li>
+          <li class="menu-title"><a href="./Products.html">Products</a></li>
           <li class="list-item"><a href="./Roofing.html">Roofing</a></li>
           <li class="list-item"><a href="./Siding.html">Siding</a></li>
           <li class="list-item"><a href="./Windows.html">Windows and Shutters</a></li>
@@ -193,14 +194,14 @@ custom fonts, your link to your stylesheet and/or javascript files -->
         </ul>
 
         <ul class="list-bar">
-          <li class="menu-title">Testimonials</li>
+          <li class="menu-title"><a href="./Testimonials.html">Testimonials</a></li>
           <li class="list-item"><a href="./Staff-reviews.html">The Staff</a></li>
           <li class="list-item"><a href="./Customers-reviews.html">The Customers</a></li>
           <li class="list-item"><a href="./News.html">The News</a></li>
         </ul>
         <!-- Other Section-->
         <ul class="list-bar">
-          <li class="menu-title">Other</li>
+          <li class="menu-title"><a href="./Other.html">Other</a></li>
           <li class="list-item"><a href="./Financing.html">Financing</a></li>
           <li class="list-item"><a href="./Promotions.html">Promotions</a></li>
           <li class="list-item"><a href="./Contact.html">Contact Us</a></li>
@@ -213,9 +214,134 @@ custom fonts, your link to your stylesheet and/or javascript files -->
 
     </div>
 
-<div class="col-12 col-lg-6 page-main-content">
+<div class="col-12 col-lg-6 page-main-content-communities">
 
-                  <h2>Content holder</h2>
+                  <h2 class="communities-title">Contact Us</h2>
+
+  <section id="contact">
+
+        <div class="container">
+
+          <div class="row contact-info">
+
+            <div class="col-md-6">
+              <div class="contact-address">
+                <i class="ion-ios-location-outline"></i>
+
+                <address>NH Exteriors Inc.
+                <br>50 Pinewood Road
+                <br>Suncook NH 03275</address>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="contact-email">
+                <i class="ion-ios-email-outline"></i>
+                <h6>Phone: <a href="tel:603-210-0128">(603) 485-3933</a></h6>
+                <h6>Toll-Free Phone: <a href="tel:800-544-3524">(800) 544-3524</a></h6>
+                <p><a href="mailto:gcj.nhexteriors@gmail.com">Send Us a Direct Email</a></p>
+              </div>
+            </div>
+
+          </div>
+          <!-- changed original php contact form to a google form -->
+          <!-- <div class="form contact-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOfy2fwijZl-8PJqwbkMAH_baKzeZQ3oMI_MXg2ox_uRvALw/viewform?embedded=true" width="320" height="635" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div> -->
+          <div class="form">
+      <form action="https://formspree.io/xeqrkzqy" method="POST" role="form" class="php-email-form" id="my-form">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input required type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+
+          </div>
+          <div class="form-group col-md-6">
+            <input required type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+
+          </div>
+
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" name="city" id="city" placeholder="Your City" data-rule="minlen:4" data-msg="Please enter your city" />
+          </div>
+
+          <select class="col-md-6 custom-select form-group form-control" id="inputGroupSelect01" name="state" placeholder="State" data-rule="minlen:4" data-msg="Please enter your State">
+          <option selected>State</option>
+          <option value="NH">New Hampshire</option>
+          <option value="MA">Massachusetts</option>
+          <option value="ME">Maine</option>
+          <option value="VT">Vermont</option>
+        </select>
+
+        </div>
+        <div class="form-group">
+          <input required type="text" class="form-control" name="phone" id="subject" placeholder="Phone Number" data-rule="minlen:4" data-msg="Please enter a valid phone number" />
+
+        </div>
+        <div class="form-group">
+          <textarea required class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us" placeholder="How May We Help You?"></textarea>
+
+        </div>
+        <div class="mb-3">
+          <p class="error-message" id="my-form-status-error"></p>
+          <p class="sent-message" id="my-form-status"></p>
+        </div>
+        <div class="text-center"><button type="submit" value="Send" id="my-form-button" class="btn btn-warning send-button">Send Message</button></div>
+      </form>
+    </div>
+
+  </div>
+      </section><!-- End Contact Section -->
+
+
+      <!-- <script>
+  window.addEventListener("DOMContentLoaded", function() {
+
+
+    // get the form elements defined in your form HTML above
+
+    let form = document.getElementById("my-form");
+    let button = document.getElementById("my-form-button");
+    let status = document.getElementById("my-form-status");
+    let statusError = document.getElementById("my-form-status-error");
+    // Success and Error functions for after the form is submitted
+
+    function success() {
+      form.reset();
+      // button.style = "display: none ";
+      status.innerHTML = "Your message has been sent. Thank you!";
+    }
+
+    function error() {
+      statusError.innerHTML = "Oops! There was a problem.";
+    }
+
+    // handle the form submission event
+
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
+</script> -->
+
 
 </div>
 
@@ -297,6 +423,11 @@ the posts from the blog -->
           <h6>Email:<a href="mailto:sales@nhext.com"> sales@nhext.com</a></h6>
         </div>
 
+        <div class="contact-us-footer">
+            <a href="./Contact.html">Contact Us</a>
+            <a href="./Quote.html">Request Quote</a>
+          </div>
+
       </div>
 
       <div class="col-12 col-lg-1">
@@ -308,8 +439,9 @@ the posts from the blog -->
           <p><strong class="menu-title-footer">About Us</strong></p>
           <p><strong class="line">____________________________</strong></p>
             <ul class="">
+              <li class=""><a href="./About-Us.html">About Us</a></li>
               <li class=""><a href="./Mission.html">Mission Statement</a></li>
-              <li class=""><a href="./History.html">History of the company</a></li>
+              <li class=""><a href="./History.html">Company History</a></li>
               <li class=""><a href="./Staff.html">Staff</a></li>
               <li class=""><a href="./Corporate.html">Corporate Citizenship</a></li>
               <li class="honors-footer"><a href="./Honors.html">Honors/Accolades</a></li>
@@ -318,6 +450,7 @@ the posts from the blog -->
             <p><strong class="menu-title-footer">Why Us?</strong></p>
             <p><strong class="line">____________________________</strong></p>
             <ul class="">
+              <li class=""><a href="./Why-Us.html">Why-Us</a></li>
               <li class=""><a href="./Warrantees.html">Warrantees / Product Quality</a></li>
               <li class=""><a href="./Service.html">Service Department</a></li>
               <li class=""><a href="./Experience.html">Experience</a></li>
@@ -329,6 +462,7 @@ the posts from the blog -->
           <p><strong class="menu-title-footer">Products</strong></p>
           <p><strong class="line">____________________________</strong></p>
           <ul class="">
+            <li class=""><a href="./Products.html">Products</a></li>
             <li class=""><a href="./Roofing.html">Roofing</a></li>
             <li class=""><a href="./Siding.html">Siding</a></li>
             <li class=""><a href="./Windows.html">Windows and Shutters</a></li>
@@ -340,9 +474,11 @@ the posts from the blog -->
             <p><strong class="menu-title-footer">Other</strong></p>
             <p><strong class="line">____________________________</strong></p>
             <ul class="">
+              <li class=""><a href="./Other.html">Other</a></li>
               <li class=""><a href="./Financing.html">Financing</a></li>
               <li class=""><a href="./Promotions.html">Promotions</a></li>
               <li class=""><a href="./Contact.html">Contact Us</a></li>
+              <li class=""><a href="./Quote.html">Request a Quote</a></li>
               <li class=""><a href="./Communities.html">Sitemap</a></li>
             </ul>
       </div>
