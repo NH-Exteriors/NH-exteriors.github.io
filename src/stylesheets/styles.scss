@@ -107,8 +107,43 @@ body {
 }
 
 .carousel-item {
-  height: 500px;
+  height: 580px;
+  margin-bottom: 40px;
   width: 100%;
+
+  .quote-left {
+    color: $secondnav;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: -470px;
+    padding: 40px 380px 40px 50px;
+  }
+
+  .name-left {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -30px;
+    padding-left: 120px;
+  }
+
+  .quote-right {
+    color: $secondnav;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: -470px;
+    padding: 40px 50px 40px 380px;
+  }
+
+  .name-right {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -30px;
+    padding-left: 450px;
+  }
 }
 
 .logo {
@@ -265,7 +300,7 @@ body {
   left: 0;
   padding: 60px 10px 10px;
   position: absolute;
-  top: 1950px;
+  top: 2050px;
   width: 100%;
 }
 
